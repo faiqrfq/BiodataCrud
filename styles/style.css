@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1, h3, h4 {
+    color: #273523; 
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p {
+    color: #656d72;
+}
+
+a {
+    text-decoration: none;
+}     
+
+.head-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*title nama saya&prjk*/
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #656d72;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Logo and Navigation Menu */
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #232e35;
+}
+
+/* Burger */
+.nav3 div {
+    width: 25px;
+    height: 2px;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.nav3 {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/* about Section */
+#about {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.about-name span {
+    color: #7e74f1;
+}
+
+/* Portfolio Section*/
+#portfolios {
+    padding: 6rem ;
+}
+
+.portfolio {
+    border-radius: 0.7rem;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+}
+
+.portfolio-cover {
+    height: 250px;
+}
+
+.portfolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.portfolio-title a svg:hover {
+    fill: #7e74f1;
+}
+
+.portfolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+/*mskh yyaak*/
+.portfolio-tags div {
+    font-size: 0.9rem;
+    border: 1px solid #f1f1f1;
+    padding: 0.4rem 1rem;
+    color: #656d72;
+}
+
+/* skills & education*/
+#biodata {
+    padding: 6rem;
+    background: lightcyan;
+}
+
+ /*Footer*/
+ footer {
+    padding: 4rem 0;
+    background: #fbfbfb;
+    text-align: center; 
+ }
+
+ .footer-icons {
+    margin-bottom: 1rem;
+ }
+
+ .footer-icons a {
+    margin: 0 0.5rem;
+ }
+
+ .footer-icons svg {
+    fill: #3e3f40;
+ }
+
+ .footer-icons a:hover svg {
+    fill: #000;
+ }
+
+ 
+  .about-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .about-right img {
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  .about-right img:hover {
+    transform: scale(1.1); /* Contoh: perbesar gambar 10% saat cursor mendekati */
+    filter: brightness(1.0); /* Contoh: tingkatkan kecerahan gambar saat cursor mendekati */
+  }
